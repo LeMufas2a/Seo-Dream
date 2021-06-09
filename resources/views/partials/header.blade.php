@@ -30,6 +30,7 @@
                         <li class="scroll-to-section"><a href="#services">Services</a></li>
                         <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
                         <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+                        <li class="scroll-to-section"><a href="{{route('home.index')}}">Se connecter</a></li>
                         <li class="scroll-to-section">
                             <div class="main-blue-button"><a href="#contact">Get Your Quote</a></div>
                         </li>

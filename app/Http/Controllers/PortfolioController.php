@@ -14,7 +14,8 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        //
+        $portfolios = Portfolio::class;
+        return view('backoffice.portfolio.all', compact('portfolios'));
     }
 
     /**
