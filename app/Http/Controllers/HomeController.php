@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $homes = About::class;
+        $homes = Home::all();
         return view('backoffice.home.all', compact('homes'));
     }
 

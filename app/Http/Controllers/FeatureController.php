@@ -14,7 +14,7 @@ class FeatureController extends Controller
      */
     public function index()
     {
-        $features = Feature::class;
+        $features = Feature::all();;
         return view('backoffice.feature.all', compact('features'));
     }
 
