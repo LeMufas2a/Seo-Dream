@@ -25,7 +25,7 @@ class ContactSeeder extends Seeder
 
         ]);
         DB::table('contacts')->insert([
-            'icone' => 'contact-icon-03.png',
+            'image' => 'contact-icon-03.png',
             'contact' => '26th Street, Digital Villa',
 
         ]);

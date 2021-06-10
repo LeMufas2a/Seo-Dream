@@ -16,7 +16,11 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         $this->call([
             HomeSeeder::class,
-            FeatureSeeder::class
+            FeatureSeeder::class,
+            AboutSeeder::class,
+            ServiceSeeder::class,
+            PortfolioSeeder::class,
+            ContactSeeder::class,
         ]);
     }
 }
