@@ -18,12 +18,12 @@
             <td><img style="width: 25px" src="{{asset('img/'.  $contact->image )}}" alt=""></td>
             <td>{{ $contact->contact }}</td>
             <td>
-                <div>
-                    <a class="btn btn-warning " href="{{route('contact.edit', $contact->id)}}">Edit</a>
-                    <form action="{{route('contact.destroy', $contact->id)}}">
+                <div class="d-flex">
+                    <a class="btn btn-warning mx-1 " href="{{route('contact.edit', $contact->id)}}">Edit</a>
+                    <form action="{{route('contact.destroy', $contact->id)}}" method="POST">
                         @csrf
                         @method('delete')
-                        <button class="btn btn-danger " href="">Delete</button>
+                        <button class="btn btn-danger" type="submit">Delete</button>
                     </form>
                 </div>
             </td>

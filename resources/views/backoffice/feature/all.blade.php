@@ -29,7 +29,7 @@
             <td>{{ $feature->langage }}</td>
             <td>
                 <div>
-                    <a class="btn btn-warning " href="{{route('contact.edit', $contact->id)}}">Edit</a>
+                    <a class="btn btn-warning " href="{{route('contact.edit', $feature->id)}}">Edit</a>
                 </div>
             </td>
         </tr>

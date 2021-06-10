@@ -26,8 +26,13 @@
             <td>{{ $home->bouton }}</td>
             <td><img style="width: 100px" src="{{asset('img/'.  $home->image )}}" alt=""></td>
             <td>
-                <div>
-                    <a class="btn btn-warning " href="{{route('contact.edit', $contact->id)}}">Edit</a>
+                <div class="d-flex">
+                    <a class="btn btn-warning mx-1 " href="{{route('contact.edit', $home->id)}}">Edit</a>
+                    <form action="{{route('home.destroy', $home->id)}}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <button class="btn btn-danger" type="submit">Delete</button>
+                    </form>
                 </div>
             </td>
         </tr>

@@ -21,7 +21,7 @@
             <td>{{ $portfolio->profession }}</td>
             <td>
                 <div>
-                    <a class="btn btn-warning " href="{{route('contact.edit', $contact->id)}}">Edit</a>
+                    <a class="btn btn-warning " href="{{route('contact.edit', $portfolio->id)}}">Edit</a>
                 </div>
             </td>
 

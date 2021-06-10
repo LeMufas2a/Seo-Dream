@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Home;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -81,6 +82,8 @@ class HomeController extends Controller
      */
     public function destroy(Home $home)
     {
-        //
+        $home->delete();
+        Storage::disk('public')->delete('img/'. $home->image);
+        return redirect()->back();
     }
 }
